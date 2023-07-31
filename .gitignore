@@ -1,24 +1,16 @@
-# Compiled class file
-*.class
+class Main{
+    public static void main(String[]args){
+        int num=3;
+        int rem;
+        int binary=0;
+        int i=1;
+        while(num!=0){
+            rem=num%2;
+            binary=binary+rem*i;
+            num=num/2;
+            i=i*10;
+        }
+        System.out.println(binary);
 
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+    }
+}
